@@ -1,0 +1,7 @@
+*.exe
+*.exe~
+*.fdb
+*.log
+*.cert
+flatfiledb-files*/*
+
