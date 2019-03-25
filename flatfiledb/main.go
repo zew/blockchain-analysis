@@ -69,4 +69,7 @@ func main() {
 	// number of serialized bytes to show it was loaded as expected.
 	fmt.Printf("Serialized block size: %d bytes\n", len(loadedBlockBytes))
 
+	bl := wire.MsgBlock{}
+	bl.Deserialize(loadedBlockBytes)
+	// _, _ := wire.MsgBlock.Deserialize(loadedBlockBytes)
 }
